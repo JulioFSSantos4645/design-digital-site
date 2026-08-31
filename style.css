@@ -1,77 +1,49 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    background-color: #f0f0f0; /* Fundo cinza claro da página */
-    color: #333333;           /* Texto padrão em cinza escuro */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #121214;
+    color: #2b2b2b;
 }
 
 header {
-    background-color: #1a1a1a; /* Cinza bem escuro / quase preto */
+    background-color: #1f1f23;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-}
-
-.logo {
-    display: flex;
-    flex-direction: column;
+    padding: 20px 5%;
 }
 
 nav a {
-    color: #cccccc;            /* Cinza claro para os links do menu */
+    color: #d4af37;
     text-decoration: none;
     margin-left: 20px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #ffffff;
 }
 
 .topo {
-    background-color: #4d4d4d; /* Cinza médio para a seção de destaque (Hero) */
+    background-color: #2a2a31;
     color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 10%;
+    padding: 80px 5%;
 }
 
 .conteudo-topo {
-    flex: 1;
     max-width: 600px;
 }
 
 .botao {
     display: inline-block;
-    background-color: #333333; /* Cinza escuro para simular o botão estático */
-    color: #ffffff;
+    background-color: #d4af37;
+    color: #121214;
     padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
     margin-top: 20px;
-    border: none;
-    cursor: default;           /* Mantém o cursor normal (sem mãozinha) */
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-.secao-cartoes, .secao-contato {
-    padding: 60px 10%;
-    background-color: #ffffff; /* Fundo branco dos blocos centrais */
+.secao-cartoes {
+    background-color: #ffffff;
+    padding: 50px 5%;
     margin: 30px auto;
     width: 80%;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    flex: 1;
 }
 
 .container-cartoes {
@@ -82,29 +54,33 @@ nav a:hover {
 }
 
 .cartao {
-    flex: 1;
-    background: #fafafa;       /* Cinza extremamente claro para os cartões individuais */
+    background-color: #f4f4f6;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    flex: 1;
 }
 
 .icone-cartao {
     width: 40px;
     height: 40px;
-    background-color: #7f7f7f; /* Cinza intermediário para o ícone simulado */
+    background-color: #33333b;
     border-radius: 6px;
     margin-bottom: 15px;
 }
 
-.bloco-formulario, .bloco-canais {
-    flex: 1;
-}
-
 .secao-contato {
+    background-color: #ffffff;
+    padding: 50px 5%;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     gap: 40px;
+}
+
+.bloco-formulario, .bloco-canais {
+    width: 45%;
 }
 
 .canal-item {
@@ -115,10 +91,26 @@ nav a:hover {
 }
 
 footer {
+    background-color: #1f1f23;
+    color: #b0b0b8;
     text-align: center;
     padding: 20px;
-    background-color: #1a1a1a; /* Mesmo cinza escuro do header para combinar */
-    color: #ffffff;
-    margin-top: auto;
-    font-size: 14px;
+    margin-top: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto no meio certinho */
+    gap: 12px;           /* Dá um espaço entre a imagem e a frase */
+}
+
+.logo img {
+    height: 75px;        /* Controla o tamanho da altura da imagem */
+    width: auto;
+}
+
+.logo span {
+    color: #ffffff;      /* Cor branca para a frase */
+    font-size: 18px;     /* Tamanho da letra */
+    font-weight: bold;   /* Deixa em negrito */
 }
